@@ -35,7 +35,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    '⭕️ Join Our Group ⭕️', url="https://t.me/HDmoviePp"
+                                    '⭕️ Join Our Channel ⭕️', url="https://t.me/HDmovieDp"
                                 )
                         ]
                     ]
@@ -50,7 +50,7 @@ async def start(bot, update):
         InlineKeyboardButton('♻️ Group', url='https://t.me/HDmoviePp'),
         InlineKeyboardButton('⭕️ Channel', url ='https://t.me/HDmovieDp')
     ],[
-        InlineKeyboardButton('🕵️ Any Doubts 🕵️', url='https://t.me/Ameen_Ameen_12')
+        InlineKeyboardButton('🤴 Dev', url='https://t.me/Ameen_Ameen_12')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
