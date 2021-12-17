@@ -133,6 +133,25 @@ async def auto_filter(bot, update):
         return
     
     else:
+        Send_message=await bot.send_video(
+                chat_id=update.chat.id,
+                video="https://telegra.ph/file/c2c0ff4b927dcc50e7922.mp4",
+                caption=f"<b>Hai 💞Mwone💞Couldn't Find This Movie.Please Try Again Or Search Google Or Not Get Movie Report Admins👉</b>"
+                        f"<b><a href='https://t.me/Ameen_Ameen_12'>👇Admin</a></b>. \n\n"
+                        f"<b>ഈ സിനിമയുടെ ഒറിജിനൽ പേര് ഗൂഗിളിൽ പോയി കണ്ടെത്തി അതുപോലെ ഇവിടെ കൊടുക്കുക🔍അഥവാ കറക്റ്റ് സ്പെല്ലിങ്ങ് ആണെങ്കിൽ Contact Admin👍കൂടുതൽ അറിയാൻ വീഡിയോ കാണുക</b>(25 Sec)",
+                parse_mode="html",
+                reply_markup=InlineKeyboardMarkup(
+                        [
+                            [
+                                InlineKeyboardButton("🔍Search Google", url=f"https://t.me/HDmoviePp")
+                            ],
+                            [
+                                InlineKeyboardButton("♻️Contact Admin♻️", url=f"https://t.me/Puthiya_Sinimakal_Request_bot")
+                            ]
+                        ]
+                    ),
+                reply_to_message_id=update.message_id
+            )
     
         result = []
         # seperating total files into chunks to make as seperate pages
